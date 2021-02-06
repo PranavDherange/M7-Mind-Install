@@ -19,4 +19,4 @@ def predictEmotion():
 
 if __name__ == "__main__":
     print("Starting Python Flask Server")
-    app.run(debug=True)
+    app.run(debug=True
