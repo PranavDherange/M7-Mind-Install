@@ -107,7 +107,7 @@ dist
 .vscode
 
 # Python
-.env
+env
 
 
 .ipynb_checkpoints
