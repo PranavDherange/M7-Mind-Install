@@ -108,3 +108,6 @@ dist
 
 # Python
 env
+
+# Misc
+utils
