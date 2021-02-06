@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# VScode json
+.vscode
+
+# Python
+.env
