@@ -108,3 +108,7 @@ dist
 
 # Python
 .env
+
+
+.ipynb_checkpoints
+zominac/web/Thumbs.db
