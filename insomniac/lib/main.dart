@@ -48,7 +48,7 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-const hostURL = "http://127.0.0.1:5000/";
+const hostURL = "http://127.0.0.1:5000/hi";
 // const hostURL = "https://zomniac.herokuapp.com/";
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -60,14 +60,15 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          elevation: 20,
-          centerTitle: true,
-          title: Text("Demo"),
-        ),
-        body: Container(
-          child: FlatButton(onPressed: _getValue(),),
-        ));
+      appBar: AppBar(
+        elevation: 20,
+        centerTitle: true,
+        title: Text("Demo"),
+      ),
+      body: Container(
+        child: _getValue(),
+      ),
+    );
   }
 }
 
@@ -81,7 +82,7 @@ http.Client _client() {
 //   }
 // }
 
-void _getValue() {
+Widget _getValue() {
   var client = _client();
   try {
     client.post(
