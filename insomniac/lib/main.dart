@@ -48,7 +48,8 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-const hostURL = "https://zomniac.herokuapp.com/";
+const hostURL = "http://127.0.0.1:5000/";
+// const hostURL = "https://zomniac.herokuapp.com/";
 
 class _MyHomePageState extends State<MyHomePage> {
   // Future<void> _listenbackend() async {
@@ -64,7 +65,9 @@ class _MyHomePageState extends State<MyHomePage> {
           centerTitle: true,
           title: Text("Demo"),
         ),
-        body: Container());
+        body: Container(
+          child: FlatButton(onPressed: _getValue(),),
+        ));
   }
 }
 
@@ -72,7 +75,13 @@ http.Client _client() {
   return http.Client();
 }
 
-bool _getValue() {
+// void check(){
+//   if(_getValue()==true){
+//     _addText(str)
+//   }
+// }
+
+void _getValue() {
   var client = _client();
   try {
     client.post(
@@ -80,10 +89,12 @@ bool _getValue() {
       body: {"Query": "bla"},
     )..then((res) {
         Map<String, dynamic> data = jsonDecode(res.body);
-        _addText(data['resp']);
+        _addText(data['response']);
       });
+    // return true;
   } catch (e) {
     print(e);
+    // return false;
   } finally {
     client.close();
   }
