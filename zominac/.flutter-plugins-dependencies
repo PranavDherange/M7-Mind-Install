@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 {"info":"This is a generated file; do not edit or check into version control.","plugins":{"ios":[{"name":"integration_test","path":"C:\\\\New folder\\\\flutter\\\\packages\\\\integration_test\\\\","dependencies":[]}],"android":[{"name":"integration_test","path":"C:\\\\New folder\\\\flutter\\\\packages\\\\integration_test\\\\","dependencies":[]}],"macos":[],"linux":[],"windows":[],"web":[]},"dependencyGraph":[{"name":"integration_test","dependencies":[]}],"date_created":"2021-02-07 21:58:53.165272","version":"1.26.0-8.0.pre"}
+=======
+{"info":"This is a generated file; do not edit or check into version control.","plugins":{"ios":[{"name":"integration_test","path":"C:\\\\New folder\\\\flutter\\\\packages\\\\integration_test\\\\","dependencies":[]}],"android":[{"name":"integration_test","path":"C:\\\\New folder\\\\flutter\\\\packages\\\\integration_test\\\\","dependencies":[]}],"macos":[],"linux":[],"windows":[],"web":[]},"dependencyGraph":[{"name":"integration_test","dependencies":[]}],"date_created":"2021-02-07 21:56:10.244135","version":"1.26.0-8.0.pre"}
+>>>>>>> Stashed changes
