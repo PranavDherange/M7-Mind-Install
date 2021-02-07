@@ -2,6 +2,9 @@
 // import 'package:universal_html/html.dart';
 // import 'dart:html';
 // import 'dart:io';
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:fab_circular_menu/fab_circular_menu.dart';
 import 'package:flutter/material.dart';
 // import 'package:speech_to_text/speech_to_text.dart';
@@ -12,7 +15,7 @@ import 'package:http/http.dart' as http;
 // import 'package:path/path.dart';
 // import 'dart:convert';
 // import 'dart:typed_data';
-// import 'package:async/async.dart';
+import 'package:async/async.dart';
 
 // import 'package:speech_to_text/speech_to_text_web.dart';
 void main() {
@@ -34,6 +37,7 @@ class MyApp extends StatelessWidget {
 }
 
 const String _url = "https://sw-detect.herokuapp.com/voiceToText";
+// const String _url = "http://192.168.0.103:5000/voiceToText";
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -41,24 +45,52 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Future<String> uploadAudio(filename, url) async {
+  Future<String> uploadAudio(file, url) async {
+    var stream = new http.ByteStream(DelegatingStream.typed(file.openRead()));
+    var length = await file.length();
     var request = http.MultipartRequest('POST', Uri.parse(url));
-    request.files.add(await http.MultipartFile.fromPath('audioPath', filename));
-    var res = await request.send();
+    var multipartFile =
+        new http.MultipartFile('file', stream, length, filename: 'bla');
+    http.StreamedResponse res = await request.send();
+    request.files.add(multipartFile);
+    var b = await res.stream.transform(utf8.decoder).join();
+    Map<String, dynamic> a = jsonDecode(b);
+    print(a['error']);
+    print(a);
     return res.reasonPhrase;
   }
 
   String resu = '';
   @override
   Widget build(BuildContext context) {
+    List<Color> lightBgColors = [
+      Color(0xFF8C2480),
+      Color(0xFFCE587D),
+      Color(0xFFFF8585)
+    ];
     return Scaffold(
       appBar: AppBar(
-        title: Text("hi"),
+        title: Text("Insomniac"),
       ),
       body: Center(
-        child:Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[Text(resu)],
+        child: Container(
+          width: double.infinity,
+          height: double.infinity,
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: lightBgColors,
+          )),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                resu,
+                style: TextStyle(),
+              ),
+            ],
+          ),
         ),
       ),
       floatingActionButton: FabCircularMenu(children: <Widget>[
@@ -69,8 +101,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   await FilePicker.platform.pickFiles(type: FileType.audio);
               if (result != null) {
                 // File file = File.fromRawPath(result.files.single.bytes);
-                // File file = File(result.files.single.path);
-                var res = await uploadAudio(result.files.single.path, _url);
+                File file = File(result.files.single.path);
+                var res = await uploadAudio(file, _url);
                 setState(() {
                   resu = res;
                   print(res);
