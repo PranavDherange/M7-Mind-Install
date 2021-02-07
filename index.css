@@ -1,0 +1,11 @@
+.container{
+    float:center;
+}
+body {
+  background-image: url('assets/logo.png');
+  background-size: cover;
+}
+.head{
+    height:400px;
+}
+
