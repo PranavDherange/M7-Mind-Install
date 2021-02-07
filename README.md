@@ -44,7 +44,15 @@ We get various random audio call files from the Internet. We then convert the au
 # Challenges we ran into
 
 
+- We were unable to retrieve any dataset from Kaggle or any other platform and that's why we had to scrap data from Reddit's posts in order to get us a dataset.
+- We faced a major issue while using Heroku. Whenever we used to pass our `POST` request our server the model used to take very much time to process the input, and we came to knew that Heroku terminates it's functionalities of handling requests within 1 minute so we were not able to send response back from our server as our model being highly complex.
+- As we were using unsupervised learning in the model we were unable to predict accuracy, because there wasn't any labelled data.
+
+
 # Accomplishments that we're proud of
+
+
+- As our previous model was not able to run on Heroku because of high compelxity, we were successfully able to re-code the whole model with less time complexity.
 
 
 
