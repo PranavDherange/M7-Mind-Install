@@ -47,5 +47,9 @@ We get various random audio call files from the Internet. We then convert the au
 # Accomplishments that we're proud of
 
 
+
 # What we learned
+
+- A simple phase of ideation about how great it is to discuss your ideas with team-mates and mentors.
+- Research is a necessary phase and include reading blog, research papers, and discussing what things can be implemented.
 
