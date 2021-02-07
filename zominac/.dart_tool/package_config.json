@@ -92,12 +92,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "fab_circular_menu",
-      "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/fab_circular_menu-1.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
       "name": "fake_async",
       "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0-nullsafety.3",
       "packageUri": "lib/",
@@ -108,12 +102,6 @@
       "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.0.0-nullsafety.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
-    },
-    {
-      "name": "file_picker",
-      "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/file_picker-2.1.6",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
     },
     {
       "name": "flutter",
@@ -128,20 +116,8 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "flutter_plugin_android_lifecycle",
-      "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
       "name": "flutter_test",
       "rootUri": "file:///C:/New%20folder/flutter/packages/flutter_test",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "flutter_web_plugins",
-      "rootUri": "file:///C:/New%20folder/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -156,18 +132,6 @@
       "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/glob-1.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.1"
-    },
-    {
-      "name": "http",
-      "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.4"
-    },
-    {
-      "name": "http_parser",
-      "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-3.1.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.3"
     },
     {
       "name": "integration_test",
@@ -186,12 +150,6 @@
       "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3-nullsafety.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
-    },
-    {
-      "name": "json_annotation",
-      "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.1.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.7"
     },
     {
       "name": "json_rpc_2",
@@ -254,12 +212,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "plugin_platform_interface",
-      "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
       "name": "pool",
       "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/pool-1.5.0-nullsafety.3",
       "packageUri": "lib/",
@@ -300,18 +252,6 @@
       "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.0-nullsafety.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
-    },
-    {
-      "name": "speech_to_text",
-      "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/speech_to_text-3.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "speech_to_text_platform_interface",
-      "rootUri": "file:///C:/New%20folder/flutter/.pub-cache/hosted/pub.dartlang.org/speech_to_text_platform_interface-1.4.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
     },
     {
       "name": "stack_trace",
@@ -398,13 +338,13 @@
       "languageVersion": "2.4"
     },
     {
-      "name": "insomniac",
+      "name": "zominac",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-02-07T16:47:37.670271Z",
+  "generated": "2021-02-07T16:47:18.081344Z",
   "generator": "pub",
   "generatorVersion": "2.12.0-179.0.dev"
 }
