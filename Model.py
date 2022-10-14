@@ -25,18 +25,20 @@ cv.get_feature_names()[random_word_id]
 
 single_topic = LDA.components_[0]
 top_ten_words = single_topic.argsort()[-20:]
+top_ten_words = LDA.components_[0].argsort()[-20:]
 
 topic_results = LDA.transform(dtm)
 data['Topic'] = topic_results.argmax(axis=1)
+data['Topic'] = LDA.transform(dtm).argmax(axis=1)
 
 # Output
 def predict(val):
     if val == 0:
-        print('Suicidal')
+        print('Suicidal!')
     elif val == 1:
-        print('Abusive/Threatening')
+        print('Abusive/Threatening.')
     else:
-        print('Completely Normal')
+        print('Completely Normal.')
 
 
 
